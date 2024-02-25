@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    /* overflow-x: scroll; */
+    /* overflow: hidden; */
     color: #232323;
 }
 
@@ -50,8 +50,6 @@ header.scrolled {
     width: 100%;
     z-index: 10;
     background: linear-gradient(100deg, rgba(253, 173, 235, 0.819), rgb(255, 255, 255));
-
-
 }
 
 header span {
@@ -59,7 +57,10 @@ header span {
     font-size: 2.1rem;
     margin-left: 10px;
     user-select: none;
-
+}
+.fa-bars{
+    display: none;
+    font-size: 20px;
 }
 
 nav {
@@ -84,8 +85,6 @@ header a {
     border-radius: 10px;
     transition: all .3s ease;
     margin: 2rem;
-
-
 }
 
 header a:hover {
@@ -99,7 +98,9 @@ section {
     height: auto;
 
 }
-
+.home-section{
+    display: flex;
+}
 main-left {
     flex: 1;
     padding: 30px 60px;
@@ -110,25 +111,24 @@ main-left {
 
 .main-left.move-left {
     animation: moveMain 2s linear forwards;
-
 }
 
 main-right {
     flex: 1;
 }
-
+/* 
 main-right img {
     height: 550px;
     width: 550px;
     padding: 10px;
-}
+} */
 
 .main-left {
     height: 90%;
     width: 100%;
     padding: 20px 30px;
     margin-left: -1000px;
-    transition: all .7s ease;
+    transition: all .9s ease;
     display: flex;
     flex-direction:  column;
 }
@@ -136,20 +136,17 @@ main-right img {
 .main-left p {
     font-size: 25px;
     font-weight: 500;
-    text-align: left;
     margin-bottom: 20px;
 }
 
 .main-left h3 {
     font-size: 29px;
-    text-align: left;
     margin-bottom: 20px;
 }
 
 .main-left h1 {
     font-size: 45px;
     line-height: 50px;
-    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -157,6 +154,7 @@ main-right img {
     margin-top: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -164,8 +162,6 @@ main-right img {
     border-radius: 10px;
     padding: 10px 10px;
     font-size: 25px;
-    margin-right: 25px;
-    margin-bottom: 20px;
     font-weight: 400;
     border: none;
     background-color: transparent;
@@ -184,13 +180,11 @@ main-right img {
 
 .social-icons li {
     list-style: none;
-    border: 2px solid;
 }
 
 .social-icons ul {
     display: flex;
     justify-content: space-between;
-    border: 2px solid ;
 }
 
 .social-icons .icon {
@@ -205,12 +199,13 @@ main-right img {
     overflow: visible;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     transition: all .5s ease-in-out;
 }
 
 .icon:hover {
-    transform: translateY(-10px);
+    transform: translateY(-9px);
 }
 
 .moving-image {
@@ -220,7 +215,7 @@ main-right img {
     right: 50px;
     width: 1px;
     height: 1px;
-    transition: all 8s ease;
+    transition: all .9s ease;
 }
 
 @keyframes moveAndEnlarge {
@@ -259,19 +254,18 @@ main-right img {
 
 .skills-section {
     width: 94vw;
-    height: 100vh;
-    /* padding: 30px; */
-    margin: 30px;
     display: flex;
     flex-direction: column;
-    row-gap: 70px;
+    row-gap: 60px;
     border-radius: 20px;
     text-align: center;
     transition:  all .5s ease-in-out;
 
 }
 
-.skills-section h2 {
+.skill-heading h2{
+    padding-left: 32px;
+    text-align: left;
     font-size: 2.4rem;
 }
 
@@ -311,7 +305,6 @@ main-right img {
 }
 
 .skill-heading {
-    
     display: flex;
     justify-content: space-between;
 }
@@ -353,10 +346,8 @@ main-right img {
 
 .project-heading h1 {
     padding-left: 32px;
-
     text-align: left;
     font-size: 2.4rem;
-
 }
 
 .project-container {
@@ -391,8 +382,6 @@ main-right img {
     text-align: center;
     background-image: url('./images/abouttt.png');
     background-size: cover;
-    /* background-position-y:  2px;
-    background-position-x: 2px ; */
     background-repeat: no-repeat;
     box-shadow: 3px 3px 30px rgb(255, 88, 185);
     display: flex;
@@ -411,7 +400,7 @@ main-right img {
     height: 100%;
     padding: 20px;
     justify-content: flex-end;
-    background: linear-gradient(to top, rgba(255, 52, 208, 0.865), rgba(255, 255, 255, 0.377));
+    background: linear-gradient(to top, rgb(255, 52, 208), rgba(255, 255, 255, 0.74));
     margin-bottom: 0px;
     opacity: 0;
     transition: all .5s ease-in-out;
@@ -429,10 +418,10 @@ main-right img {
 
 .card-content:hover {
     opacity: 1;
-    font-weight: 500;
+    font-weight: 600;
 }
 .about-section{
-    max-width: 100%;
+    /* max-width: 100%; */
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -450,7 +439,6 @@ main-right img {
 .about-container{
     display: flex;
     justify-content: space-between;
-    margin: 20px 0px;
 }
 .left-about{
     flex: 1;
@@ -489,7 +477,7 @@ main-right img {
     padding-right: 10px;
 }
 .contact-section{
-    max-width: 100%;
+    /* max-width: 100%; */
     display: flex;
     flex-direction: column;
 
@@ -508,7 +496,7 @@ main-right img {
     width: 210px;
     z-index: 3;
     margin-bottom: -85px;
-    margin-right: 120px;
+    transform: translateX(-124px);
 }
 .contact-container{
     height: auto;
@@ -517,7 +505,7 @@ main-right img {
     display: flex;
     z-index:  2;
      /* Fallback color  */
-  background-color: rgba(255, 118, 214, 0.267);  
+  background-color: rgba(255, 125, 197, 0.306);  
 }
 .left-contact{
     flex: 1;
@@ -538,7 +526,7 @@ main-right img {
 .right-contact form{
     display: flex;
     flex-direction: column;
-    width:  60%;
+    width: 60%;
     box-sizing:border-box;
     margin: 30px auto;
     background: transparent;
@@ -579,14 +567,235 @@ main-right img {
     box-shadow: 10px 10px 15px rgba(253, 44, 152, 0.63);    outline: 1px;
 
 }
-@media(max-width: 900px) {
-    header{
+@media(max-width: 400px) {
+    .background {
+        filter: blur(28px);
+    } 
+    .fa-bars{
+        display: block;
+    }
+    nav{
         display: none;
+    }
+    header{
+        margin: 0;
+        padding: 14px;
+        height: 3rem;
+
+    }
+    header span {
+        font-weight: 800;
+        font-size: 1.3rem;
+        user-select: none;
+    }
+    .home-section{
+        flex-direction: column-reverse;
+    }
+    .moving-image {
+        padding: 10px;
+        position: relative;
+        bottom: 30px;
+        right: 40px;
+        top: 2px;
+        left: 40px; 
+        width: 300px; 
+        height: 300px;
+        transition: all 3s ease;
+    }
+    
+    @keyframes moveAndEnlarge {
+        0% {
+            right: 40px;
+            left: 40px;
+            transform: translate(90%, 90%);
+            width: 300px;
+            height: 300px;
+        }
+    }
+    @keyframes moveMain {
+        0% {
+            width: 100%;
+        }
+    
+        100% {
+            transform: translateX(280px)
+        }
+    }
+    .main-left{
+        transition: all 2s ease;
+    }
+    main-left{
+        padding: 9px;
     }
     .social-icons .icon{
         margin: 1px;
     }
-    .about-section{
-        display: none;
+    .main-left {
+        padding: 0;
+        display: flex;
+        align-items: left;
+        margin-left: -550px;
+    }
+    .main-left p {
+        font-size: 19px;
+        font-weight: 200;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .main-left h3{
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+    .main-left h1{
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 30px;
+
+    }
+    .button-section{
+        margin-top:  10px;
+        justify-content: space-between;
+    }
+    .main-btn{
+        padding: 7px;
+        font-size: 15px;
+    }
+    .button-section img{
+        height: 50px;
+        width: 50px;
+    }
+    .social-icons {
+        margin-top: 1rem;
+        max-width: 100% !important;
+        padding: 0px 20px;
+    }
+    .social-icons .icon{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .skills-section{
+        margin: 0;
+        padding: 0;
+        row-gap: 40px;
+
+        }
+    .skill-heading h2{
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+    .skills-girl{
+        height: 160px;
+        width: 160px;
+        margin-top: -70px;
+        position: relative;
+    }
+    .skills-section p {
+        font-size: 17px;
+        font-weight: 400;
+        padding: 5px;
+    }
+    .skill-container{
+        gap: 15px;
+    }
+    .skill{
+        width: 50px;
+        height: 50px;
+    }
+    .skill Img{
+        width: 35px;
+        height: 35px;
+        margin-top: 6px;
+    }
+    .indivisual-skills label{
+        font-size: 10px;
+    }
+    .skills-girl2{
+        height: 150px;
+        width: 150px;
+    }
+    .projects-section h1{
+        padding-left: 10px;
+        font-size: 1.3rem;
+    }
+    .project-card{
+        width: 400px;
+        height: 300px;
+        margin: 3px;
+        border-radius:  8px;
+    }
+    .project-card .card-content {
+        color: rgb(0, 0, 0);
+    }
+    .card-content p{
+        font-size: 11px;
+    }
+    .card-content h1{
+        font-size:  1rem;
+    }
+    .card-content .project-links{
+        gap: 20px;
+        font-size:  17px;
+    }
+    .about-heading h1{
+        font-size: 1.3rem;
+        padding-left: 10px;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .left-about img{
+        height: 300px;
+        width: 330px;
+    }
+    .right-about{
+        padding: 20px;
+        gap: 5px;
+    }
+    .right-about p{
+        line-height: 1.3em;
+        font-size:  13px;
+        margin-bottom: 15px;
+    }
+    .right-about span{
+        font-size: 12px;
+    }
+    .right-about i{
+        padding-right: 6px;
+        font-size: 15px;
+    }
+    /* contact design started  */
+    .contact-heading h1{
+        font-size: 1.3rem;
+        padding-left: 10px;
+    }
+    .contact-heading img{
+        height: 135px;
+        width: 135px;
+        margin-bottom: -65px;
+        transform: translateX(-27px);
+    }
+    .contact-container{
+        margin: .9rem;
+        flex-direction: column-reverse;
+    }
+    .left-contact img{
+        height: 400px;
+    }
+    .right-contact form{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .right-contact form label{
+        margin: 4px 1px;
+        font-size: 13px;
+    }
+    .right-contact form button{
+        width: 40%;
+        padding: 7px 5px;
+        margin:  15px auto;
+        font-size: 14px;
+        border-radius:  7px;
     }
 }
