@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+  <script>
+// Assuming you have an array of objects
+const array = [
+  { name: "Object 1", description: "Description 1" },
+  { name: "Object 2", description: "Description 2" },
+  { name: "Object 3", description: "Description 3" }
+];
+const mySkills = [
+    {
+        skillName: "HTML5",
+        ImgSrc: "./images/html_icon.png",
+        alt: "HTML Icon"
+    },
+    {
+        skillName: "CSS",
+        ImgSrc: "./images/css.png",
+        alt: "Cascading Style Sheets"
+    },
+    {
+        skillName: "JavaScript",
+        ImgSrc: "./images/js.png",
+        alt: "javascript icon"
+    },
+    {
+        skillName: "React",
+        ImgSrc: "./images/react.png",
+        alt: "React Logo"
+    },
+    {
+        skillName: "Node JS",
+        ImgSrc: "./images/nodeJs.png",
+        alt: "NodeJS Logo"
+    },
+    {
+        skillName: "Tailwind",
+        ImgSrc: "./images/tailwind.png",
+        alt: "tailwind Logo"
+    },
+    {
+        skillName: "Git",
+        ImgSrc: "./images/git.png",
+        alt: "Git Logo"
+    },
+    {
+        skillName: "My SQL",
+        ImgSrc: "./images/mysql_icon.png",
+        alt: "mysql Logo"
+    },
+    {
+        skillName: "Mongo DB",
+        ImgSrc: "./images/mongodb_icon.png",
+        alt: "mongo db Logo"
+    },
+
+]
+
+document.body.classList.add("skill-container")
+// Loop through the array
+mySkills.forEach(object => {
+  // Create a new card for each object
+  const card = document.createElement("div");
+  card.classList.add("indivisual-skills");
+  const skill = document.createElement("div")
+  skill.classList.add("skill");
+  card.appendChild(skill);
+  // Populate the card with object data
+  const skillImg = document.createElement("img");
+  skillImg.src = object.ImgSrc;
+  skillImg.textContent = object.ImgSrc;
+  skill.appendChild(skillImg);
+
+
+  const descriptionElement = document.createElement("label");
+  descriptionElement.textContent = object.skillName;
+  skill.appendChild(descriptionElement) 
+
+
+//   card.appendChild(skillImg);
+  card.appendChild(descriptionElement);
+
+  // Append the card to the document or do whatever you want with it
+  document.body.appendChild(card);
+  
+});
+      
+  </script>
+</body>
+</html>
