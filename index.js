@@ -11,7 +11,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.querySelector(".moving-image").classList.add("move");
     document.querySelector(".main-left").classList.add("move-left");
     skillLoader()
+    const checkbox = document.querySelector('#menu');
+    const overlay = document.querySelector('.overlay');
+    const menu = document.querySelectorAll('.menu');
+    menu.forEach((element)=>{
+        let elechild= element.children;
+        for(let i=0;i<elechild.length;i++){
+            elechild[i].addEventListener('click',()=>{
+                checkbox.checked = false;
+                overlay.style.display = 'none';
+            })
+        }
+    });
+checkbox.addEventListener('change', () => {
+  if (checkbox.checked) {
+    overlay.style.display = 'block';
+  } else {
+    overlay.style.display = 'none';
+  }
 });
+
+});
+
+
 
 // array of skills
 const mySkills = [
