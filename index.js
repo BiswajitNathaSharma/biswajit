@@ -95,8 +95,8 @@ const miniProjects = [
 window.addEventListener('load', ()=>{
     document.body.style.overflow =  'hidden';
     const loader=document.querySelector('.loader-container');
-    setTimeout(() => {
     loader.style.display='none';
+    setTimeout(() => {
     document.querySelector(".moving-image").classList.add("move");
     document.querySelector(".main-left").classList.add("move-left");
     document.body.style.overflow =  'visible';
