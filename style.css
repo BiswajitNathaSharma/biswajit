@@ -104,11 +104,12 @@ section {
 
 .home-section {
     display: flex;
+    height: 85vh;
 }
 
 main-left {
     flex: 1;
-    padding: 30px 60px;
+    padding: 30px 40px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,6 +138,7 @@ main-right img {
     transition: all .9s ease;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .main-left p {
@@ -157,7 +159,7 @@ main-right img {
 }
 
 .button-section {
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -405,10 +407,8 @@ main-right img {
 
 .project-container {
     width: 100%;
-    transition:  all .6s ease-in-out;
     overflow: hidden;
 }
-
 .projects-section .project-heading {
     display: flex;
     justify-content: space-between;
@@ -441,7 +441,6 @@ main-right img {
     box-shadow: 3px 3px 30px rgb(255, 88, 185);
     display: flex;
     align-items: flex-end;
-    transition: all .5s ease-in-out;
     position: relative;
     opacity: 1;
 }
@@ -858,6 +857,7 @@ main-right img {
 
     .home-section {
         flex-direction: column-reverse;
+        height: 93vh;
     }
 
     .moving-image {
