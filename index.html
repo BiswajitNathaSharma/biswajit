@@ -12,6 +12,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./loader.css">
     <script src="https://kit.fontawesome.com/2e79f70891.js" crossorigin="anonymous"></script>
     <script src="./index.js">
     </script>
@@ -20,42 +21,68 @@
 <body>
     <div class="background"></div>
     <div class="overlay"></div>
+    <div class="loader-container">
+        <div class="preloader">
+            <svg class="cart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                    <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+                        <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+                        <circle cx="43" cy="111" r="13" />
+                        <circle cx="102" cy="111" r="13" />
+                    </g>
+                    <g class="cart__lines" stroke="currentColor">
+                        <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" stroke-dasharray="338 338" stroke-dashoffset="-338" />
+                        <g class="cart__wheel1" transform="rotate(-90,43,111)">
+                            <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                        </g>
+                        <g class="cart__wheel2" transform="rotate(90,102,111)">
+                            <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <div class="preloader__text">
+                <p class="preloader__msg">Getting your browsing cart ready!</p>
+                <p class="preloader__msg preloader__msg--last">This is taking time more than usual... </p>
+            </div>
+        </div>
+    </div>
     <div class="nav-container">
         <nav class="nav">
-          <input id="menu" type="checkbox">
-          <label for="menu">Menu</label>
-          <ul class="menu">
+        <input id="menu" type="checkbox">
+        <label for="menu">Menu</label>
+        <ul class="menu">
             <li>
-              <a href="#">
-                  <span>Home</span>
-                  <img src="./images/home.png" alt="">
-              </a>
+            <a href="#">
+                <span>Home</span>
+                <img src="./images/home.png" alt="">
+            </a>
             </li>
             <li>
-              <a href="#Skills">
+            <a href="#Skills">
                 <span>Skills</span>
                 <img src="./images/skill.png" alt="">
-              </a>
+            </a>
             </li>
             <li>
-              <a href="#About">
+            <a href="#About">
                 <span>About</span>
                 <img src="./images/about.png" alt="">
-              </a>
+            </a>
             </li>
             <li>
-              <a href="#Contact">
+            <a href="#Contact">
                 <span>Contact</span>
                 <img src="./images/contact-mail.png" alt="">
-              </a>
+            </a>
             </li>
             <li>
-              <a href="#Projects">
+            <a href="#Projects">
                 <span>Projects</span>
                 <img src="./images/project.png" alt="">
-              </a>
+            </a>
             </li>
-          </ul>
+        </ul>
         </nav>
       </div>
     <header>
@@ -124,8 +151,9 @@
             <div class="project-heading">
                 <h1>Projects</h1>
                 <div class="tougle">
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox"></label>
+                    <input
+                    type="checkbox" id="checkbox">
+                    <label for="checkbox" id="btn" ></label>
                 </div>
             </div>
             <div id="card-container">
@@ -139,33 +167,11 @@
                             the contact form are directly forwarded to the administrators via Elastic Mail, ensuring
                             efficient communication."
                         </p>
+                        
+                <h4>Techstack: <span id="tech-stack">python, CSS, html, react</span></h4>
                         <span class="project-links">
-                            <i class="fa-brands fa-github"></i>
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <h1>i am project</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, libero delectus
-                            autem sunt fuga alias aliquam perferendis!
-                        </p>
-                        <span class="project-links">
-                            <i class="fa-brands fa-github"></i>
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <h1>i am project</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, libero delectus
-                            autem sunt fuga alias aliquam perferendis!
-                        </p>
-                        <span class="project-links">
-                            <i class="fa-brands fa-github" title="source code"></i>
-                            <i class="fa-solid fa-arrow-right-from-bracket" title="live deploye"></i>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
                         </span>
                     </div>
                 </div>
@@ -192,7 +198,7 @@
                     web applications using modern technologies. Explore my portfolio to witness my passion for frontend
                     development and dedication to delivering high-quality, responsive web experiences.</p>
                 <br>
-                <a href=""><span><i class="fa-solid fa-location-dot"></i>Odisha, India</span></a>
+                <a href="https://maps.app.goo.gl/udw2xZ1rF5jkFYnz9"><span><i class="fa-solid fa-location-dot"></i>Odisha, India</span></a>
                 <a href=""> <span><i class="fa-solid fa-envelope-circle-check"></i>sharmaoncourse@gmail.com</span></a>
                 <a href=""><span><i class="fa-solid fa-phone-volume"></i>+91 9999999999</span></a>
             </div>
