@@ -224,7 +224,7 @@ main-right img {
     right: 50px;
     width: 1px;
     height: 1px;
-    /* transition: all .9s ease; */
+    transition: all .9s ease;
 }
 
 @keyframes moveAndEnlarge {
@@ -893,10 +893,7 @@ main-right img {
     @keyframes moveMain {
         0% {
             width: 100%;
-        }
-
-        100% {
-            transform: translateX(275px)
+            transform: translateX(0px)
         }
     }
 
@@ -916,7 +913,7 @@ main-right img {
         padding: 8px;
         display: flex;
         align-items: left;
-        margin-left: -550px;
+        margin: 0;
     }
 
     .main-left p {
