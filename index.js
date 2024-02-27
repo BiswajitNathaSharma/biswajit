@@ -98,7 +98,7 @@ window.addEventListener('load', ()=>{
     setTimeout(() => {
         loader.style.display='none';
     document.body.style.overflow =  'visible';
-    }, 1000);
+    }, 1500);
 })
 window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
