@@ -100,7 +100,7 @@ window.addEventListener('load', ()=>{
     document.querySelector(".moving-image").classList.add("move");
     document.querySelector(".main-left").classList.add("move-left");
     document.body.style.overflow =  'visible';
-    }, 2000);
+    }, 3000);
 })
 window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
