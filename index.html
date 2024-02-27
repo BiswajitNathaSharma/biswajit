@@ -19,8 +19,47 @@
 
 <body>
     <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="nav-container">
+        <nav class="nav">
+          <input id="menu" type="checkbox">
+          <label for="menu">Menu</label>
+          <ul class="menu">
+            <li>
+              <a href="#">
+                  <span>Home</span>
+                  <img src="./images/home.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#Skills">
+                <span>Skills</span>
+                <img src="./images/skill.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#About">
+                <span>About</span>
+                <img src="./images/about.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#Contact">
+                <span>Contact</span>
+                <img src="./images/contact-mail.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#Projects">
+                <span>Projects</span>
+                <img src="./images/project.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     <header>
-        <span>&lt;Biswajit/&gt;</span>
+        <span class="logo">&lt;Biswajit/&gt;</span>
         <nav>
             <ul>
                 <li> <a href="#">Home</a></li>
@@ -31,22 +70,20 @@
             </ul>
         </nav>
     </header>
-    <section id="Home">
+    <section id="Home" class="home-section">
         <main-left>
             <div class="main-left">
                 <p>Hello There !</p>
                 <h3>I’m Biswajit Natha Sharma</h3>
                 <h1>Frontend Developer <br />& ui /ux Designer</h1>
                 <div class="button-section">
-                    <div class="btn">
-                        <button class="main-btn">Download CV
-                            <i class="fa-solid fa-download"></i>
-                        </button>
-                        <button class="main-btn">Hire Me
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </button>
-                        <img src="./images/arrow.jpg" alt="" />
-                    </div>
+                    <button class="main-btn">Download CV
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                    <button class="main-btn">Hire Me
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                    <img src="./images/arrow.jpg" alt="" />
 
                 </div>
                 <div class="social-icons">
@@ -57,7 +94,6 @@
                         <li><i class="fa-brands fa-github icon"></i></li>
                     </ul>
                 </div>
-                
             </div>
 
         </main-left>
@@ -74,7 +110,7 @@
         </div>
         <p>Technologies I'm familiar with:</p>
         <div class="skill-container" id="skill-container">
-            
+
 
         </div>
         <img src="./images/servies.png" alt="skill girl" class="skills-girl2">
@@ -87,13 +123,21 @@
         <div class="project-container">
             <div class="project-heading">
                 <h1>Projects</h1>
-                <div>tougle</div>
+                <div class="tougle">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox"></label>
+                </div>
             </div>
             <div id="card-container">
                 <div class="project-card">
                     <div class="card-content">
                         <h1>i am project</h1>
-                        <p>"Fiziks Chamber is an innovative frontend project designed to promote a local physics coaching center. Highlighting an engaging 'Students Hall of Frame' page, it captivates users with its attractive design. With seamless device responsiveness and robust contact form validation, users can easily interact with the platform. Notably, messages submitted through the contact form are directly forwarded to the administrators via Elastic Mail, ensuring efficient communication."
+                        <p>"Fiziks Chamber is an innovative frontend project designed to promote a local physics
+                            coaching center. Highlighting an engaging 'Students Hall of Frame' page, it captivates users
+                            with its attractive design. With seamless device responsiveness and robust contact form
+                            validation, users can easily interact with the platform. Notably, messages submitted through
+                            the contact form are directly forwarded to the administrators via Elastic Mail, ensuring
+                            efficient communication."
                         </p>
                         <span class="project-links">
                             <i class="fa-brands fa-github"></i>
@@ -141,12 +185,17 @@
         <div class="about-container">
             <div class="left-about"><img src="./images/abouttt.png" alt=""></div>
             <div class="right-about">
-                <p>In my portfolio, I showcase my proficiency as a frontend fresher developer, specializing in HTML, CSS, JavaScript, React, and Tailwind CSS. With a focus on crafting device-responsive websites, I demonstrate my ability to create visually appealing and user-friendly interfaces across various screen sizes. Through examples of my work, I highlight my skills in building dynamic and interactive web applications using modern technologies. Explore my portfolio to witness my passion for frontend development and dedication to delivering high-quality, responsive web experiences.</p>
+                <p>In my portfolio, I showcase my proficiency as a frontend fresher developer, specializing in HTML,
+                    CSS, JavaScript, React, and Tailwind CSS. With a focus on crafting device-responsive websites, I
+                    demonstrate my ability to create visually appealing and user-friendly interfaces across various
+                    screen sizes. Through examples of my work, I highlight my skills in building dynamic and interactive
+                    web applications using modern technologies. Explore my portfolio to witness my passion for frontend
+                    development and dedication to delivering high-quality, responsive web experiences.</p>
                 <br>
                 <a href=""><span><i class="fa-solid fa-location-dot"></i>Odisha, India</span></a>
                 <a href=""> <span><i class="fa-solid fa-envelope-circle-check"></i>sharmaoncourse@gmail.com</span></a>
                 <a href=""><span><i class="fa-solid fa-phone-volume"></i>+91 9999999999</span></a>
-                </div>
+            </div>
         </div>
     </section>
     <div class="background"></div>
@@ -155,24 +204,24 @@
         <div class="contact-heading">
             <h1>Contact Me</h1>
             <img src="./images/contactGirl.d385586e.svg" alt="">
+        </div>
+        <div class="contact-container ">
+            <div class="left-contact">
+                <img src="./images/contactImgs.2ecc8e0e.svg" alt="">
             </div>
-            <div class="contact-container">
-                <div class="left-contact">
-                    <img src="./images/contactImgs.2ecc8e0e.svg" alt="">
-                </div>
-                <div class="right-contact">
-                    <form action="">
-                        <label for="name">Name:</label>
-                        <input type="text" required>
-                        <label for="email">Email:</label>
-                        <input type="email" required>
-                        <label for="message">Message:</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <button type="submit">Submit</button>
-                        <span id="error-message"></span>
-                    </form>
-                </div>
+            <div class="right-contact">
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" required>
+                    <label for="email">Email:</label>
+                    <input type="email" required>
+                    <label for="message">Message:</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button type="submit">Submit</button>
+                    <span id="error-message"></span>
+                </form>
             </div>
+        </div>
     </section>
 
 
