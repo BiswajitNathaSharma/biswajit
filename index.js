@@ -65,8 +65,39 @@ const miniProjects = [
         sourceCode: `https://github.com/BiswajitNathaSharma/your-own-todo`,
         liveDeployment:`https://biswajitnathasharma.github.io/your-own-todo/`,
         ImgSrc: `./images/todo.png`
+    },
+    {
+        projectName: "Git Profile Viewer",
+        description:  `"GitHub Profile Viewer" is a simple frontend project aimed at learning how to use the GitHub API with the fetch method. Users can input a GitHub username, and the application will fetch and display the user's profile information on a card. The project features both dark mode and light mode themes for user customization. This project serves as a beginner-friendly introduction to API handling and basic frontend development.`,
+        techStack : ["React"," JavaScript"," Tailwind"," Context API"],
+        sourceCode: ``,
+        liveDeployment: ``,
+        ImgSrc:  `./images/github-profile-viewer.png`
+    },
+    {
+        projectName: `Currency Converter`,
+        description:`
+        The "Currency Converter" project offers a user-friendly interface for seamless currency conversion. Users input amounts and select currencies effortlessly. Real-time exchange rates from an API ensure accurate calculations. Streamlining the process, it's ideal for travelers, online shoppers, and anyone needing swift, reliable currency conversion services.`,
+        techStack :[" React"," JavaScript"," Tailwind"],
+        sourceCode: ``,
+        liveDeployment: ``,
+        ImgSrc:  `./images/currencyConverter.png`
+    },
+    {
+        projectName: `Make me Laugh`,
+        description: "Application built with React, which uses the 'icanhazdadjoke' api for generating jokes.",
+        techStack :[" React"," JavaScript"," Tailwind"],
+        sourceCode: ``,
+        liveDeployment: ``,
+        ImgSrc:  `./images/joakGenerator.png`
     }
 ]
+window.addEventListener('load', ()=>{
+    const loader=document.querySelector('.loader-container');
+    setTimeout(() => {
+    loader.style.display='none';
+    }, 3000);
+})
 window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
     if (window.pageYOffset > 0) {
@@ -78,8 +109,10 @@ window.addEventListener("scroll", function () {
 
 document.addEventListener("DOMContentLoaded", function (event) {
     // moving main 
-    document.querySelector(".moving-image").classList.add("move");
-    document.querySelector(".main-left").classList.add("move-left");
+    setTimeout(() => {
+        document.querySelector(".moving-image").classList.add("move");
+        document.querySelector(".main-left").classList.add("move-left");
+    }, 3000);
 
     // skill loader 
     skillLoader()
