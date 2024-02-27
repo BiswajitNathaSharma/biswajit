@@ -7,7 +7,7 @@
 	/* font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320)); */
 }
 .loader-container {
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,8 @@
 		background-color var(--trans-dur),
 		color var(--trans-dur);
         z-index: 500;
-        user-select:  none;
+    user-select:  none;
+	pointer-events:  none;
 }
 .preloader {
 	text-align: center;

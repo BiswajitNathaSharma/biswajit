@@ -93,10 +93,14 @@ const miniProjects = [
     }
 ]
 window.addEventListener('load', ()=>{
+    document.body.style.overflow =  'hidden';
     const loader=document.querySelector('.loader-container');
     setTimeout(() => {
     loader.style.display='none';
-    }, 3000);
+    document.querySelector(".moving-image").classList.add("move");
+    document.querySelector(".main-left").classList.add("move-left");
+    document.body.style.overflow =  'visible';
+    }, 2000);
 })
 window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
@@ -108,17 +112,11 @@ window.addEventListener("scroll", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    // moving main 
-    setTimeout(() => {
-        document.querySelector(".moving-image").classList.add("move");
-        document.querySelector(".main-left").classList.add("move-left");
-    }, 3200);
+
 
     // skill loader 
     skillLoader()
-
-    
-    // menu design start
+// menu design start
     const checkbox = document.querySelector('#menu');
     
     const overlay = document.querySelector('.overlay');

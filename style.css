@@ -135,7 +135,7 @@ main-right img {
     width: 100%;
     padding: 20px 30px;
     margin-left: -1000px;
-    transition: all .85s ease;
+    transition: all 1.5s ease;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -223,7 +223,7 @@ main-right img {
     right: 50px;
     width: 1px;
     height: 1px;
-    transition: all .9s ease;
+    /* transition: all .9s ease; */
 }
 
 @keyframes moveAndEnlarge {
@@ -261,16 +261,18 @@ main-right img {
 }
 
 .skills-section {
-    width: 94vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 60px;
-    border-radius: 20px;
     text-align: center;
-    transition: all .5s ease-in-out;
-
+    justify-content: center;
+    gap: 20px;
 }
-
+.main-skill{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .skill-heading h2 {
     padding-left: 32px;
     text-align: left;
@@ -288,31 +290,36 @@ main-right img {
 
 .skill:hover {
     box-shadow: 2px 2px 20px rgba(255, 44, 157, 0.8);
-    animation: skill-rotate 1.5s;
+    animation: heart-beat 1.4s infinite;
 }
 
-@keyframes skill-rotate {
+@keyframes heart-beat {
     0% {
-        transform: rotate(0deg);
+        transform: scale(0.9);
     }
+    50%{
+        transform: scale(1.1);
 
+    }
     100% {
-        transform: rotate(-360deg);
+        transform: scale(0.9);
     }
 }
+.animate {
+    transform: translateX(20px);
+}
 
-/* skill section started  */
 .skills-girl {
+    position: relative;
     height: 210px;
     width: 210px;
-    margin-top: -90px;
+    margin-top: -33px;
 }
 
 .skills-girl2 {
     height: 230px;
     width: 220px;
 }
-
 .skill-heading {
     display: flex;
     justify-content: space-between;
@@ -426,21 +433,21 @@ main-right img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 25px;
 }
 
 .project-card {
     width: 450px;
     height: 400px;
-    margin: 5px;
-    border-radius: 10px;
+    margin: 15px;
+    border-radius: 11px;
     text-align: center;
     /* background-image: url('./images/abouttt.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 3px 3px 30px rgb(255, 88, 185);
     display: flex;
-    align-items: flex-end;
+    bottom: 0;
     position: relative;
     opacity: 1;
 }
@@ -832,7 +839,7 @@ main-right img {
         left: 0;
         width: 100%;
         height: 100%;
-        backdrop-filter: blur(5px); /* Apply blur effect */
+        backdrop-filter: blur(7px); /* Apply blur effect */
         z-index: 19; /* Ensure it's above other content */
       }
       
@@ -866,7 +873,7 @@ main-right img {
         bottom: 30px;
         right: 50px;
         top: 2px;
-        left: 20px;
+        left: 35px;
         width: 300px;
         height: 300px;
         transition: all 3s ease;
@@ -875,7 +882,7 @@ main-right img {
     @keyframes moveAndEnlarge {
         0% {
             right: 40px;
-            left: 40px;
+            left: 50px;
             transform: translate(90%, 90%);
             width: 300px;
             height: 300px;
@@ -938,7 +945,7 @@ main-right img {
 
     .main-btn {
         padding: 7px;
-        font-size: 15px;
+        font-size: 19px;
     }
 
     .button-section img {
@@ -1014,9 +1021,9 @@ main-right img {
 
     .project-card {
         width: 400px;
-        height: 300px;
+        height: 350px;
         margin: 3px;
-        border-radius: 8px;
+        border-radius: 10px;
     }
 
     .project-card .card-content {
@@ -1028,12 +1035,14 @@ main-right img {
     }
 
     .card-content h1 {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .card-content .project-links {
-        gap: 20px;
-        font-size: 17px;
+        font-size: 22px;
+        width: 30%;
+        margin: auto;
+        
     }
 
     .about-heading h1 {
