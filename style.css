@@ -105,6 +105,7 @@ section {
 .home-section {
     display: flex;
     height: 85vh;
+    overflow: hidden;
 }
 
 main-left {

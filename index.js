@@ -98,7 +98,7 @@ window.addEventListener('load', ()=>{
     setTimeout(() => {
         loader.style.display='none';
     document.body.style.overflow =  'visible';
-    }, 2000);
+    }, 1000);
 })
 window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
@@ -114,7 +114,7 @@ setTimeout(() => {
     
     document.querySelector(".moving-image").classList.add("move");
     document.querySelector(".main-left").classList.add("move-left");
-}, 500);
+}, 2000);
     // skill loader 
     skillLoader()
 // menu design start
