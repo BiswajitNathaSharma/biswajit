@@ -96,8 +96,6 @@ window.addEventListener('load', ()=>{
     document.body.style.overflow =  'hidden';
     const loader=document.querySelector('.loader-container');
     setTimeout(() => {
-        document.querySelector(".moving-image").classList.add("move");
-        document.querySelector(".main-left").classList.add("move-left");
         loader.style.display='none';
     document.body.style.overflow =  'visible';
     }, 2000);
@@ -112,8 +110,11 @@ window.addEventListener("scroll", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function (event) {
-
-
+setTimeout(() => {
+    
+    document.querySelector(".moving-image").classList.add("move");
+    document.querySelector(".main-left").classList.add("move-left");
+}, 500);
     // skill loader 
     skillLoader()
 // menu design start
