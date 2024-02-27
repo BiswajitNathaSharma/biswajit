@@ -135,7 +135,7 @@ main-right img {
     width: 100%;
     padding: 20px 30px;
     margin-left: -1000px;
-    transition: all .9s ease;
+    transition: all .85s ease;
     display: flex;
     flex-direction: column;
     overflow: hidden;

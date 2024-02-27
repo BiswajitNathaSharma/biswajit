@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     setTimeout(() => {
         document.querySelector(".moving-image").classList.add("move");
         document.querySelector(".main-left").classList.add("move-left");
-    }, 3000);
+    }, 3200);
 
     // skill loader 
     skillLoader()
