@@ -1,67 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-   body {
-  position: relative;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(5px); /* Apply blur effect */
-  z-index: 999; /* Ensure it's above other content */
-  pointer-events: none; /* Allow click through */
-}
-
-.nav {
-  /* Styles for your navigation container */
-}
-
-/* Additional styles for your navigation container */
-
-
-.blur:not(.nav) {
-  filter: blur(5px); /* Apply blur effect to body except for the navigation container */
-}
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete All Children</title>
 </head>
 <body>
-  <input id="menuCheckbox" type="checkbox">
-  <nav class="nav">
-    <!-- Your navigation menu -->
-    <!-- Nav content -->
-  </nav>
-  <div class="overlay"></div> 
-  <h1>h1</h1><!-- The overlay -->
-  <!-- Rest of your HTML content -->
+
+<div id="card-container">
+    <div class="card">Child 1</div>
+    <div class="card">Child 2</div>
+    <div class="card">Child 3</div>
+    <!-- Add more child elements here if needed -->
+</div>
+
+<label for="checkbox" id="btn">Clear Children</label>
+<input type="checkbox" id="checkbox" onclick="clearChildren()">
+
+<script>
+    let parent = document.getElementById("card-container");
+
+    function clearChildren() {
+        while (parent.hasChildNodes()) {
+            parent.firstChild.remove();
+        }
+    }
+</script>
+
 </body>
-
-  <script>
-  const menuCheckbox = document.getElementById('menuCheckbox');
-const overlay = document.querySelector('.overlay');
-
-menuCheckbox.addEventListener('change', function() {
-  if (this.checked) {
-    overlay.style.display = 'block';
-    document.body.classList.add('blur');
-  } else {
-    overlay.style.display = 'none';
-    document.body.classList.remove('blur');
-  }
-});
-
-    </script>
-  
-</body>
-
-
 </html>

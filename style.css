@@ -435,7 +435,7 @@ main-right img {
     margin: 5px;
     border-radius: 10px;
     text-align: center;
-    background-image: url('./images/abouttt.png');
+    /* background-image: url('./images/abouttt.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 3px 3px 30px rgb(255, 88, 185);
@@ -443,9 +443,10 @@ main-right img {
     align-items: flex-end;
     transition: all .5s ease-in-out;
     position: relative;
+    opacity: 1;
 }
 
-.project-card .card-content {
+.card-content {
     overflow: hidden;
     border-radius: 10px;
     width: 100%;
@@ -458,7 +459,9 @@ main-right img {
     background: linear-gradient(to top, rgb(255, 52, 208), rgba(255, 255, 255, 0.74));
     margin-bottom: 0px;
     opacity: 0;
-    transition: all .5s ease-in-out;
+    font-weight: 600;
+    transition: all .7s ease-in-out;
+
 }
 
 .card-content .project-links {
@@ -473,7 +476,6 @@ main-right img {
 
 .card-content:hover {
     opacity: 1;
-    font-weight: 600;
 }
 
 /* about section started  */
@@ -653,6 +655,9 @@ main-right img {
 
 /* mobile responsive section started  */
 @media(max-width: 400px) {
+    .divider{
+        height: 55px;
+    }
     .background {
         filter: blur(28px);
     }
@@ -697,9 +702,9 @@ main-right img {
       bottom: 0;
       left: 0;
       width: 100%;
-      padding-bottom: 5px;
-      border-radius: 5px 5px 25px 25px;
-      background: var(--white);
+      padding-bottom: 8px;
+      border-radius: 2px 2px 25px 25px;
+      background: rgba(255, 80, 194, 0.588);
       box-shadow: rgb(50 50 93 / 10%) 0 30px 60px -12px,
         rgb(0 0 0 / 15%) 0 18px 36px -18px;
         height: 55px;
@@ -717,7 +722,7 @@ main-right img {
       justify-content: center;
       font-size: 16px;
       cursor: pointer;
-      z-index: 1;
+      z-index: 51;
       background: var(--violet);
       transition:  all 0.9s ease-in-out;
       border-radius: 50%;
@@ -1122,11 +1127,11 @@ main-right img {
         font-size: 10px;
         font-weight: 600;
         height: 33px;
-        width: 59px;
+        width: 69px;
         background: linear-gradient(to right, rgba(255, 145, 207, 0.761), rgb(230, 224, 224));
         border-radius: 20px;
-        padding: 2px 1px;
-        margin: 2px 3px;
+        padding: 3px 1px;
+        margin: 1px 1px;
         transition: all .5s ease-in-out;
 
     }
@@ -1137,8 +1142,9 @@ main-right img {
             content: "Mini Projects";
             color: rgb(6, 6, 6);
             background: linear-gradient(to left, rgba(255, 127, 200, 0.761), white);
-            transform: translateX(71px);
+            transform: translateX(65px);
             transition: all .5s ease-in-out;
+            margin: 1px 1px;
 
         }
     }
