@@ -56,38 +56,6 @@ const fullProjects = [
         sourceCode: `https://github.com/BiswajitNathaSharma/fiziksChamber`,
         liveDeployment: `https://biswajitnathasharma.github.io/fiziksChamber/`,
         ImgSrc: `./images/project-images/fiziksChamber.png`
-    },
-    {
-        projectName: "Fiziks Chamber",
-        description: `Fiziks Chamber is an innovative frontend project designed to promote a local physics coaching center. Highlighting an engaging 'Hall of Frame' page, it captivates users with its attractive design. With seamless device responsiveness and robust contact form validation, users can easily interact with the platform. Notably, messages submitted through the contact form are directly forwarded to the administrators via Elastic Mail, ensuring efficient communication.`,
-        techStack: ["HTML5", " CSS3", " Javascript", " git"],
-        sourceCode: `https://github.com/BiswajitNathaSharma/fiziksChamber`,
-        liveDeployment: `https://biswajitnathasharma.github.io/fiziksChamber/`,
-        ImgSrc: `./images/project-images/fiziksChamber.png`
-    },
-    {
-        projectName: "Fiziks Chamber",
-        description: `Fiziks Chamber is an innovative frontend project designed to promote a local physics coaching center. Highlighting an engaging 'Hall of Frame' page, it captivates users with its attractive design. With seamless device responsiveness and robust contact form validation, users can easily interact with the platform. Notably, messages submitted through the contact form are directly forwarded to the administrators via Elastic Mail, ensuring efficient communication.`,
-        techStack: ["HTML5", " CSS3", " Javascript", " git"],
-        sourceCode: `https://github.com/BiswajitNathaSharma/fiziksChamber`,
-        liveDeployment: `https://biswajitnathasharma.github.io/fiziksChamber/`,
-        ImgSrc: `./images/project-images/fiziksChamber.png`
-    },
-    {
-        projectName: "Fiziks Chamber",
-        description: `Fiziks Chamber is an innovative frontend project designed to promote a local physics coaching center. Highlighting an engaging 'Hall of Frame' page, it captivates users with its attractive design. With seamless device responsiveness and robust contact form validation, users can easily interact with the platform. Notably, messages submitted through the contact form are directly forwarded to the administrators via Elastic Mail, ensuring efficient communication.`,
-        techStack: ["HTML5", " CSS3", " Javascript", " git"],
-        sourceCode: `https://github.com/BiswajitNathaSharma/fiziksChamber`,
-        liveDeployment: `https://biswajitnathasharma.github.io/fiziksChamber/`,
-        ImgSrc: `./images/project-images/fiziksChamber.png`
-    },
-    {
-        projectName: "Fiziks Chamber",
-        description: `Fiziks Chamber is an innovative frontend project designed to promote a local physics coaching center. Highlighting an engaging 'Hall of Frame' page, it captivates users with its attractive design. With seamless device responsiveness and robust contact form validation, users can easily interact with the platform. Notably, messages submitted through the contact form are directly forwarded to the administrators via Elastic Mail, ensuring efficient communication.`,
-        techStack: ["HTML5", " CSS3", " Javascript", " git"],
-        sourceCode: `https://github.com/BiswajitNathaSharma/fiziksChamber`,
-        liveDeployment: `https://biswajitnathasharma.github.io/fiziksChamber/`,
-        ImgSrc: `./images/project-images/fiziksChamber.png`
     }
 ]
 
