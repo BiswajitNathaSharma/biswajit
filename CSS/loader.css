@@ -32,6 +32,10 @@
 	position: relative;
 	height: 1.5em;
 }
+#cart-messaage {
+	color: gray;
+	font-size: .8em;
+}
 .preloader__msg {
 	animation: msg 0.3s 13.7s linear forwards;
 	position: absolute;
