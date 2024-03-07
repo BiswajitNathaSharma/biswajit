@@ -23,7 +23,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    filter: blur(50px);
+    filter: blur(5vw);
     z-index: -1;
 }
 
@@ -55,13 +55,8 @@ header.scrolled {
 .logo {
     font-weight: 700;
     font-size: 2.1rem;
-    margin-left: 10px;
+    margin-left: 3vw;
     user-select: none;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 20px;
 }
 
 nav {
@@ -88,7 +83,7 @@ ul {
 
 header a {
     padding-top: 1rem;
-    padding: .6rem 15px;
+    padding: .6rem 1vw;
     border-radius: 10px;
     transition: all .3s ease;
     margin: 2rem;
@@ -144,24 +139,24 @@ main-right {
 }
 
 .main-left p {
-    font-size: 25px;
+    font-size: 1.9vw;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 1.8vh;
 }
 
 .main-left h3 {
-    font-size: 29px;
-    margin-bottom: 20px;
+    font-size: 2.5vw;
+    margin-bottom: 2vh;
 }
 
 .main-left h1 {
-    font-size: 45px;
-    line-height: 50px;
-    margin-bottom: 20px;
+    font-size: 4.2vw;
+    line-height: 5vw;
+    margin-bottom: 1vh;
 }
 
 .button-section {
-    margin-top: 40px;
+    margin-top: 1vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -170,8 +165,8 @@ main-right {
 
 .main-btn {
     border-radius: 10px;
-    padding: 10px 10px;
-    font-size: 25px;
+    padding: .5vw 1.5vw;
+    font-size: 1.7vw;
     font-weight: 400;
     border: none;
     background-color: transparent;
@@ -188,18 +183,15 @@ main-right {
     margin-top: 1.5rem;
 }
 
-.social-icons li {
-    list-style: none;
-}
 
 .social-icons ul {
     display: flex;
     justify-content: space-between;
 }
 
-.social-icons .icon {
-    width: 55px;
-    height: 55px;
+.icon {
+    width: 5vw;
+    height: 5vw;
     text-align: center;
     color: #ff1fad;
     font-size: 30px;
@@ -237,10 +229,10 @@ main-right {
 
     100% {
         bottom: 0%;
-        right: 0;
+        right: 0%;
         transform: translate(-25%, -15%);
-        width: 550px;
-        height: 550px;
+        width: 35.5vw;
+        height: 35.5vw;
     }
 }
 
@@ -754,7 +746,7 @@ main-right {
         overflow: visible;
     }
     
-    .main-left p {
+    /* .main-left p {
         font-size: 20px;
         font-weight: 500;
         margin-bottom: 20px;
@@ -769,7 +761,7 @@ main-right {
         font-size: 37px;
         line-height: 40px;
         margin-bottom: 5px;
-    }
+    } */
     
     .button-section {
         margin-top: 1%;
@@ -1065,10 +1057,8 @@ main-right {
     }
 
     .main-left p {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
-        text-align: left;
-        margin-bottom: 10px;
     }
 
     .main-left h3 {
@@ -1077,8 +1067,8 @@ main-right {
     }
 
     .main-left h1 {
-        font-size: 23px;
-        font-weight: 700;
+        font-size: 25px;
+        font-weight: 800;
         line-height: 33px;
     }
 
@@ -1091,7 +1081,7 @@ main-right {
     .main-btn {
         justify-content: left;
         padding: 7px;
-        font-size: 19px;
+        font-size: 16px;
     }
 
     .button-section img {
