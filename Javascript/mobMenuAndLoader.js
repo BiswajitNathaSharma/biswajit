@@ -12,11 +12,10 @@ if (isMobile) {
         loader.style.display = 'none';
         document.body.style.overflow = 'visible';
         if (loader.style.display === 'none') {
-            document.querySelector(".moving-image").classList.add("move");
-            document.querySelector(".main-left").classList.add("move-left");
-            // skill loader
-            skillLoader()
+            
         }
+        // skill loader
+        skillLoader()
     }, 1000);
 }
 function skillLoader() {
