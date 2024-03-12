@@ -1,4 +1,5 @@
 import {mySkills } from "./data.js";
+import gsapAnimation from "./gsap.js"
 
 let isMobile = window.matchMedia("(max-width: 700px)").matches;
 function loaderOff() {
@@ -12,7 +13,7 @@ if (isMobile) {
         loader.style.display = 'none';
         document.body.style.overflow = 'visible';
         if (loader.style.display === 'none') {
-            
+            gsapAnimation()
         }
         // skill loader
         skillLoader()
