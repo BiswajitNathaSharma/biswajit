@@ -55,7 +55,7 @@ function gsapAnimation(){
         x: -70,
         duration: 1,
         scrollTrigger:{
-            trigger:".divider",
+            trigger:".skills-girl",
             scroller:"body",
             scrub:3,
         }
@@ -63,12 +63,14 @@ function gsapAnimation(){
     gsap.from(".indivisual-skills",{
         scale: 0,
         duration: 1,
-        opacity:0.6,
-        stagger:0.3,
+        opacity: 0.6,
+        stagger: .3,
         scrollTrigger:{
-            trigger:".divider",
+            trigger:"#Skills",
             scroller:"body",
-            scrub: 1 ,
+            scrub: 2,
+            markers:true,
+            end:"top 20%"
         }
     })
 
