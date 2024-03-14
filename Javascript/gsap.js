@@ -41,25 +41,25 @@ function gsapAnimation(){
     // home section animation added 
 
     // skill section animation 
-    gsap.from(".skills-girl",{
-        scale: 1,
-        x: -50,
-        duration: 1,
-        scrollTrigger:{
-            trigger:".skills-girl",
-            scroller:"body",
-            scrub:3,
-        }
-    })
-    gsap.from(".skills-girl2",{
-        x: -70,
-        duration: 1,
-        scrollTrigger:{
-            trigger:".skills-girl",
-            scroller:"body",
-            scrub:3,
-        }
-    })
+    // gsap.from(".skills-girl",{
+    //     scale: 1,
+    //     x: -50,
+    //     duration: 1,
+    //     scrollTrigger:{
+    //         trigger:".skills-girl",
+    //         scroller:"body",
+    //         scrub:3,
+    //     }
+    // })
+    // gsap.from(".skills-girl2",{
+    //     x: -70,
+    //     duration: 1,
+    //     scrollTrigger:{
+    //         trigger:".skills-girl",
+    //         scroller:"body",
+    //         scrub:3,
+    //     }
+    // })
     gsap.from(".indivisual-skills",{
         duration: 2,
         opacity: 0,
