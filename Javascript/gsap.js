@@ -55,7 +55,7 @@ function gsapAnimation(){
         x: -70,
         duration: 1,
         scrollTrigger:{
-            trigger:".skills-girl2",
+            trigger:".divider",
             scroller:"body",
             scrub:3,
         }
@@ -82,9 +82,10 @@ function gsapAnimation(){
         duration: 0.5,
         stagger:0.3,
         scrollTrigger:{
-            trigger:"#card-container",
+            trigger:".project-heading",
             scroller:"body",
-            scrub: 2,
+            scrub: 1.5,
+            markers:true
         }
     })
     // project animation ended
