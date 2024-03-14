@@ -85,7 +85,6 @@ function gsapAnimation(){
             trigger:".project-heading",
             scroller:"body",
             scrub: 1.5,
-            markers:true
         }
     })
     // project animation ended
