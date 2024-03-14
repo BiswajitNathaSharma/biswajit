@@ -126,13 +126,11 @@ main-left {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 
 main-right {
     width: 40%;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,6 +145,7 @@ main-right {
     transition: all 1.5s ease;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .main-left p {
@@ -192,8 +191,11 @@ main-right {
 
 .social-icons {
     margin-top: 1.5vw;
+    overflow: hidden;
 }
-
+.social-icons:hover{
+    overflow: visible;
+}
 
 .social-icons ul {
     display: flex;
@@ -254,6 +256,7 @@ main-right {
 .skill-heading h2 {
     padding-left: 32px;
     text-align: left;
+    overflow-x: hidden;
     font-size: 2.4rem;
 }
 
@@ -267,6 +270,7 @@ main-right {
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.527);
+    overflow: hidden;
 }
 
 .skill:hover {
@@ -344,12 +348,13 @@ main-right {
 .skill img {
     width: 80%;
 }
-
 /* project section started  */
 .project-heading h1 {
     padding-left: 32px;
     text-align: left;
     font-size: 2.4rem;
+    border: 2px solid green;
+    overflow: hidden;
 }
 
 .tougle {
@@ -606,11 +611,13 @@ main-right {
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
 }
 
 .contact-heading {
     display: flex;
+    overflow: visible;
     justify-content: space-between;
 }
 
@@ -781,8 +788,6 @@ main-right {
 
     .skill {
         height: 6.5vw;
-        width: 6.5vw;
-        overflow: hidden;
         width: 6.5vw;
     }
 
@@ -1300,6 +1305,7 @@ main-right {
     }
 
     main-right {
+        overflow: hidden;
         width: 100%;
     }
 
@@ -1315,7 +1321,6 @@ main-right {
     .home-section {
         margin-top: 0px;
     }
-
     .main-left p {
         font-size: 18px;
         font-weight: 400;

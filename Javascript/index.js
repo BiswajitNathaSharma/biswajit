@@ -1,4 +1,4 @@
-import { projectSectionLoader } from "./projectSection.js";
+import { projectSectionLoader,skillLoader } from "./projectSection.js";
 import { loaderOff, mobileMenuDesign } from "./mobMenuAndLoader.js";
 
 
@@ -17,4 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenuDesign()
         // project page design start 
         projectSectionLoader()
+        // skill loader 
+        skillLoader();
 });

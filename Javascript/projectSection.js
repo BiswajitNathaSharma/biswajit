@@ -1,4 +1,5 @@
 import { fullProjects, miniProjects } from "./data.js";
+import {mySkills } from "./data.js";
 
 let isMobile = window.matchMedia("(max-width: 700px)").matches;
 let currentIndex = 0;
@@ -86,5 +87,30 @@ function addProjectToPage(proj, container) {
     let cards = container.appendChild(card)
     cards.appendChild(cardContent);
 }
+function skillLoader() {
+    const skill_container = document.getElementById("skill-container");
+    mySkills.forEach(object => {
+        const card = document.createElement("div");
 
-export {projectSectionLoader}
+        card.classList.add("indivisual-skills");
+        const skill = document.createElement("div");
+        skill.classList.add("skill");
+
+        const skillImg = document.createElement("img");
+        skillImg.src = object.ImgSrc;
+        skillImg.alt = object.alt;
+        skill.appendChild(skillImg);
+
+        const descriptionElement = document.createElement("label");
+        descriptionElement.textContent = object.skillName;
+
+        // Append the skill to the card
+        card.appendChild(skill);
+        card.appendChild(descriptionElement);
+
+
+        // Append the card to the container
+        skill_container.appendChild(card);
+    });
+}
+export {projectSectionLoader, skillLoader}
