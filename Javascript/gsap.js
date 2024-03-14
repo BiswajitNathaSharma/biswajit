@@ -63,12 +63,12 @@ function gsapAnimation(){
     gsap.from(".indivisual-skills",{
         scale: 0,
         duration: 1,
-        opacity:0.6,
-        stagger:0.3,
+        opacity: 0.6,
+        stagger: .3,
         scrollTrigger:{
             trigger:".divider",
             scroller:"body",
-            scrub: 1 ,
+            scrub:1
         }
     })
 
