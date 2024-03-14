@@ -43,7 +43,7 @@ function gsapAnimation(){
     // skill section animation 
     gsap.from(".skills-girl",{
         scale: 1,
-        x: -70,
+        x: -50,
         duration: 1,
         scrollTrigger:{
             trigger:".skills-girl",
