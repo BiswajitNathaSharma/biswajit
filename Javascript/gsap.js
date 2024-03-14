@@ -61,16 +61,14 @@ function gsapAnimation(){
         }
     })
     gsap.from(".indivisual-skills",{
-        scale: 0,
-        duration: 1,
-        opacity: 0.6,
-        stagger: .3,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.5,
         scrollTrigger:{
             trigger:"#Skills",
             scroller:"body",
             scrub: 2,
-            markers:true,
-            end:"top 20%"
+            end:"top 15%"
         }
     })
 
