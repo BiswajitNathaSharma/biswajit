@@ -669,28 +669,39 @@ main-right {
     margin: 30px auto;
     background: transparent;
 }
-
+.right-contact form .input .error {
+    position: absolute;
+    transform: translateY(225%);
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
 .right-contact form input {
     background: transparent;
     outline: none;
     border: 0.5px solid;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0 1.8vw;
     height: 35px;
+    min-width: 100%;
+    padding-left: 2vw;
 }
 
 .right-contact form label {
     margin: 9px 1px;
 }
 
-.right-contact form textarea {
+.right-contact form #message {
     resize: none;
     height: 150px;
+    min-width: 100%;
     background: transparent;
     outline: none;
     border: 0.5px solid;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0.5vw 1.8vw;
 }
 
 .right-contact form button {
@@ -706,7 +717,12 @@ main-right {
     border: 0.5px solid;
 
 }
-
+.error i{
+    color: rgb(216, 2, 2);
+}
+#error-message{
+    color: red;
+}
 .right-contact form button:hover {
     box-shadow: 10px 10px 15px rgba(253, 44, 152, 0.63);
     outline: 1px;
@@ -1283,7 +1299,16 @@ main-right {
         margin: 4px 1px;
         font-size: 13px;
     }
-
+    .right-contact form .input .error {
+        position: absolute;
+        transform: translateY(150%);
+    }
+    .right-contact form input {
+        padding-left: 3vw;
+    }
+    .right-contact form #message {
+        padding-left: 3vw;
+    }
     .right-contact form button {
         width: 40%;
         padding: 7px 5px;
@@ -1313,6 +1338,12 @@ main-right {
         top: 0px;
         height: 100%;
         width: auto;
+    }
+    .right-contact form input {
+        padding-left: 4vw;
+    }
+    .right-contact form #message {
+        padding-left: 4vw;
     }
 }
 
@@ -1375,5 +1406,11 @@ main-right {
 
     .skills-section label {
         font-size: 4vw;
+    }
+    .right-contact form input {
+        padding-left: 6vw;
+    }
+    .right-contact form #message {
+        padding-left: 6vw;
     }
 }
