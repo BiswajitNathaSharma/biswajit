@@ -243,7 +243,7 @@
                 <img src="./images/component-images/contactImgs.2ecc8e0e.svg" alt="">
             </div>
             <div class="right-contact">
-                <form action="">
+                <form action="" id="form">
                     <div class="input">
                     <label for="name">Name:</label>
                         <div class="error name-error">
@@ -251,6 +251,12 @@
                         <input type="text" id="name" required onkeyup="validateName()">
                     </div>
 
+                    <div class="input">
+                    <label for="subject">Subject:</label>
+                        <div class="error subject-error">
+                        </div>
+                        <input type="text" id="subject" onkeyup="validateSubject()">
+                    </div>
                     <div class="input">
                     <label for="email">Email:</label>
                         <div class="error email-error">
@@ -274,6 +280,8 @@
     <!-- end of contact section  -->
 
     <!-- js import start  -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
