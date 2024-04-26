@@ -748,15 +748,15 @@ main-right {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* opacity: 0; */
+    opacity: 0;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 10px;
     z-index: 10;
-    /* visibility: hidden; */
+    visibility: hidden;
     box-shadow: 3px 3px 30px rgb(255, 88, 185);
     background: linear-gradient(45deg, rgb(253, 173, 234), rgb(255, 255, 255));
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
 .open-popup{
@@ -935,7 +935,7 @@ main-right {
 
     :root {
         --white: #ffffff;
-        --violet: rgb(255, 52, 208);
+        --violet: linear-gradient(to top, rgb(255, 52, 208), rgba(255, 255, 255, 0.74));
         --dark-violet: rgb(255, 110, 231);
         --black: #21232a;
     }
@@ -963,7 +963,7 @@ main-right {
         width: 100%;
         padding-bottom: 8px;
         border-radius: 2px 2px 25px 25px;
-        background: rgba(255, 80, 194, 0.588);
+        background: var(--dark-violet);
         box-shadow: rgb(50 50 93 / 10%) 0 30px 60px -12px,
             rgb(0 0 0 / 15%) 0 18px 36px -18px;
         height: 55px;
@@ -993,7 +993,7 @@ main-right {
     }
 
     .nav [type="checkbox"]+label:hover {
-        background: var(--dark-violet);
+        background: var(--violet);
     }
 
     .menu li {
@@ -1050,7 +1050,7 @@ main-right {
     }
 
     .nav input:checked+label {
-        background: linear-gradient(to top, rgb(255, 52, 208), rgba(255, 255, 255, 0.74));
+        background: var(--violet);
         transform: translateY(calc(-30% + 4px));
     }
 
@@ -1089,7 +1089,7 @@ main-right {
     }
 
     .overlay {
-        display: block;
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -1393,27 +1393,30 @@ main-right {
     }
 
     .popup {
-        height: 75vw;
+        height: 50vw;
         width: 75vw;
     }
 
     .popup>div>img {
-        height: 20vw;
-        width: 20vw;
-        margin-top: -18%;
+        height: 18vw;
+        width: 18vw;
+        margin-top: -15%;
     }
 
     #popup-h2 {
-        font-size: 10vw;
+        font-size: 8.5vw;
     }
 
     #popup-p {
-        font-size: 4.5vw;
+        overflow: hidden;
+        font-size: 3vw;
         font-weight: 500;
     }
 
     .popup button {
-        font-size: 4vw;
+        font-size: 3.5vw;
+        padding: 7px 30px;
+        border-radius: 10px;
     }
 
 }
@@ -1516,5 +1519,25 @@ main-right {
 
     .right-contact form #message {
         padding-left: 6vw;
+    }
+    .popup{
+        height: 60vw;
+    }
+
+    .popup>div>img {
+        height: 20vw;
+        width: 20vw;
+        margin-top: -18%;
+    }
+
+    #popup-p {
+        font-size: 3.8vw;
+        padding: 4vw 3vw 0;
+        font-weight: 500;
+    }
+
+    .popup button {
+        font-size: 4vw;
+        border-radius: 10px;
     }
 }
