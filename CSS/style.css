@@ -193,7 +193,8 @@ main-right {
     margin-top: 1.5vw;
     overflow: hidden;
 }
-.social-icons:hover{
+
+.social-icons:hover {
     overflow: visible;
 }
 
@@ -348,6 +349,7 @@ main-right {
 .skill img {
     width: 80%;
 }
+
 /* project section started  */
 .project-heading h1 {
     padding-left: 32px;
@@ -670,27 +672,41 @@ main-right {
     background: transparent;
 }
 
+.right-contact form .input .error {
+    position: absolute;
+    transform: translateY(225%);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
 .right-contact form input {
     background: transparent;
     outline: none;
     border: 0.5px solid;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0 1.8vw;
     height: 35px;
+    min-width: 100%;
+    padding-left: 2vw;
 }
 
 .right-contact form label {
     margin: 9px 1px;
 }
 
-.right-contact form textarea {
+.right-contact form #message {
     resize: none;
     height: 150px;
+    min-width: 100%;
     background: transparent;
     outline: none;
     border: 0.5px solid;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0.5vw 1.8vw;
 }
 
 .right-contact form button {
@@ -707,6 +723,14 @@ main-right {
 
 }
 
+.error i {
+    color: rgb(216, 2, 2);
+}
+
+#error-message {
+    color: red;
+}
+
 .right-contact form button:hover {
     box-shadow: 10px 10px 15px rgba(253, 44, 152, 0.63);
     outline: 1px;
@@ -714,6 +738,70 @@ main-right {
 
 .nav-container {
     display: none;
+}
+
+
+.popup {
+    height: 24vw;
+    width: 40vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* opacity: 0; */
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 10;
+    /* visibility: hidden; */
+    box-shadow: 3px 3px 30px rgb(255, 88, 185);
+    background: linear-gradient(45deg, rgb(253, 173, 234), rgb(255, 255, 255));
+    transition: all .3s ease;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+.popup>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup>div>img {
+    height: 10vw;
+    width: 10vw;
+    margin-top: -15%;
+    border-radius: 50%;
+    border-bottom: 2px solid gray;
+}
+
+#popup-h2 {
+    font-size: 4vw;
+    font-weight: 900;
+}
+
+#popup-p {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.popup button {
+    position: absolute;
+    padding: 15px 50px;
+    border-radius: 15px;
+    border: 2px solid gray;
+    background-color: transparent;
+    font-size: 1vw;
+    font-weight: 800;
+    bottom: 10px;
+    cursor: pointer;
 }
 
 /* Tablet responsive section started  */
@@ -1001,7 +1089,7 @@ main-right {
     }
 
     .overlay {
-        display: none;
+        display: block;
         position: fixed;
         top: 0;
         left: 0;
@@ -1009,8 +1097,7 @@ main-right {
         height: 100%;
         backdrop-filter: blur(7px);
         /* Apply blur effect */
-        z-index: 19;
-        /* Ensure it's above other content */
+        z-index: 10;
     }
 
     header nav {
@@ -1284,12 +1371,49 @@ main-right {
         font-size: 13px;
     }
 
+    .right-contact form .input .error {
+        position: absolute;
+        transform: translateY(150%);
+    }
+
+    .right-contact form input {
+        padding-left: 3vw;
+    }
+
+    .right-contact form #message {
+        padding-left: 3vw;
+    }
+
     .right-contact form button {
         width: 40%;
         padding: 7px 5px;
         margin: 15px auto;
         font-size: 14px;
         border-radius: 7px;
+    }
+
+    .popup {
+        height: 75vw;
+        width: 75vw;
+    }
+
+    .popup>div>img {
+        height: 20vw;
+        width: 20vw;
+        margin-top: -18%;
+    }
+
+    #popup-h2 {
+        font-size: 10vw;
+    }
+
+    #popup-p {
+        font-size: 4.5vw;
+        font-weight: 500;
+    }
+
+    .popup button {
+        font-size: 4vw;
     }
 
 }
@@ -1314,12 +1438,21 @@ main-right {
         height: 100%;
         width: auto;
     }
+
+    .right-contact form input {
+        padding-left: 4vw;
+    }
+
+    .right-contact form #message {
+        padding-left: 4vw;
+    }
 }
 
 @media (max-width: 500px) {
     .home-section {
         margin-top: 0px;
     }
+
     .main-left p {
         font-size: 18px;
         font-weight: 400;
@@ -1375,5 +1508,13 @@ main-right {
 
     .skills-section label {
         font-size: 4vw;
+    }
+
+    .right-contact form input {
+        padding-left: 6vw;
+    }
+
+    .right-contact form #message {
+        padding-left: 6vw;
     }
 }
