@@ -38,28 +38,7 @@ function gsapAnimation(){
         stagger:.2
     })
 
-    // home section animation added 
 
-    // skill section animation 
-    // gsap.from(".skills-girl",{
-    //     scale: 1,
-    //     x: -50,
-    //     duration: 1,
-    //     scrollTrigger:{
-    //         trigger:".skills-girl",
-    //         scroller:"body",
-    //         scrub:3,
-    //     }
-    // })
-    // gsap.from(".skills-girl2",{
-    //     x: -70,
-    //     duration: 1,
-    //     scrollTrigger:{
-    //         trigger:".skills-girl",
-    //         scroller:"body",
-    //         scrub:3,
-    //     }
-    // })
     gsap.from(".indivisual-skills",{
         duration: 2,
         opacity: 0,
@@ -75,19 +54,7 @@ function gsapAnimation(){
     // skill section ended 
 
 
-    // project animation started 
-    gsap.from("#card-container",{
-        scale: 0.9,
-        opacity:0.7,
-        duration: 0.5,
-        stagger:0.3,
-        scrollTrigger:{
-            trigger:".project-heading",
-            scroller:"body",
-            scrub: 1.5,
-        }
-    })
-    // project animation ended
+
 
     // about animation started 
 
