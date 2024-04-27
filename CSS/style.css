@@ -351,12 +351,12 @@ main-right {
 }
 
 /* project section started  */
-.project-heading h1 {
-    padding-left: 32px;
+.project-heading {
+    padding-left: 37px;
     text-align: left;
     font-size: 2.4rem;
-    overflow: hidden;
 }
+
 
 .tougle {
     margin-right: 100px;
@@ -404,41 +404,47 @@ main-right {
     }
 }
 
-.project-container {
+
+.projects-section {
+    display: block;
+    width: auto;
+}
+
+
+swiper-container {
     width: 100%;
-    overflow: hidden;
-    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.projects-section .project-heading {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    align-items: center;
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
 }
 
-.project-heading div {
-    text-align: center;
-    display: flex;
-    align-items: center;
+
+
+swiper-slide {
+    background-image: url(../images/project-images/sabitridevi.png);
+    position: relative;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:
-        25px 2px;
+.project-container {
+    position: relative;
 }
-
 
 .project-card {
     width: 450px;
     height: 400px;
-    margin: 15px;
+    margin: 25px 15px;
     border-radius: 11px;
     text-align: center;
-    /* background-image: url('./images/abouttt.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 3px 3px 30px rgb(255, 88, 185);
@@ -449,7 +455,6 @@ main-right {
 }
 
 .card-content {
-    overflow: hidden;
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -462,7 +467,10 @@ main-right {
     opacity: 0;
     font-weight: 600;
     transition: all .7s ease-in-out;
-
+}
+.card-content p{
+    font-size: 1rem;
+    color: black;
 }
 
 .card-content h2 {
@@ -483,56 +491,6 @@ main-right {
 
 .card-content:hover {
     opacity: 1;
-}
-
-.project-btn {
-    border-radius: 10px;
-    padding: 10px 10px;
-    font-size: 25px;
-    font-weight: 500;
-    border: none;
-    background-color: transparent;
-    transition: all .5s ease-in-out;
-    cursor: pointer;
-    width: 25%;
-    margin: 25px auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.project-btn i {
-    padding: 3px 9px;
-}
-
-.project-btn:hover {
-    box-shadow: 10px 10px 15px rgba(253, 44, 152, 0.63);
-    outline: none;
-    border: none;
-}
-
-.disabled {
-    box-shadow: none;
-    background: rgba(255, 90, 175, 0.323);
-
-}
-
-.disabled:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-}
-
-#miniProjectBtn {
-    display: none;
-}
-
-.final-page {
-    font-size: 20px;
-    width: 50%;
-    margin: auto;
-    color: red;
-    display: none;
-    text-align: center;
 }
 
 /* about section started  */
@@ -759,13 +717,14 @@ main-right {
     transition: all .5s ease;
 }
 
-.open-popup{
+.open-popup {
     visibility: visible;
     top: 50%;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 
 }
+
 .popup>div {
     display: flex;
     flex-direction: column;
@@ -1217,41 +1176,6 @@ main-right {
         font-size: 1.3rem;
     }
 
-    .tougle {
-        margin-right: 30px;
-    }
-
-    .tougle label {
-        width: 165px;
-        height: 40px;
-        border-radius: 22px;
-    }
-
-    .tougle label::before {
-        font-size: 10px;
-        font-weight: 600;
-        height: 77%;
-        width: 50%;
-        background: linear-gradient(to right, rgba(255, 145, 207, 0.761), rgb(230, 224, 224));
-        border-radius: 20px;
-        padding: 3px 1px;
-        margin: 1px 0.5px;
-        transition: all .5s ease-in-out;
-
-    }
-
-    .tougle input:checked {
-        +label::before {
-            font-size: 10px;
-            color: rgb(6, 6, 6);
-            background: linear-gradient(to left, rgba(255, 127, 200, 0.761), white);
-            transform: translateX(92%);
-            transition: all .5s ease-in-out;
-            margin: 1px 1px;
-
-        }
-    }
-
     .project-card {
         width: 300px;
         height: 300px;
@@ -1267,37 +1191,24 @@ main-right {
     }
 
     .card-content p {
-        font-size: 11px;
+        font-size: 12px;
+        font-weight: 700;
     }
 
     .card-content h2 {
         font-size: 1rem;
-        font-weight: 700;
+        font-weight: 900;
     }
 
     .card-content h4 {
-        font-weight: 550;
+        font-weight: 600;
         font-size: .8rem;
     }
 
-    .card-content .project-links {
-        font-size: 25px;
+    .card-content .project-links i{
+        font-size: 23px;
     }
 
-    .project-btn {
-        font-size: 15px;
-        width: 70%;
-        box-shadow: 10px 10px 15px rgba(253, 44, 152, 0.63);
-    }
-
-    .disabled {
-        box-shadow: none;
-    }
-
-    .final-page {
-        width: 100%;
-        font-size: 14px;
-    }
 
     /* about design start  */
     .about-heading h1 {
@@ -1520,7 +1431,8 @@ main-right {
     .right-contact form #message {
         padding-left: 6vw;
     }
-    .popup{
+
+    .popup {
         height: 60vw;
     }
 

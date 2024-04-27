@@ -1,68 +1,15 @@
-import { fullProjects, miniProjects } from "./data.js";
+import { projects } from "./data.js";
 import {mySkills } from "./data.js";
 
-let isMobile = window.matchMedia("(max-width: 700px)").matches;
-let currentIndex = 0;
-let isFullProjects = true; 
-function projectSectionLoader() {
-    clearContainer();
-    checkIsMobileOrNot()
-    projectToggleBtn()
-    loadMoreProject()
-}
-function checkIsMobileOrNot(){
-    if (isMobile) {
-        loadNextCardMobile();
-        document.getElementById("projectLoadBtn").style.display = "block";
-    }
-    else {
-        document.getElementById("projectLoadBtn").style.display = "none";
-        loadNextCard();
-    }
-}
-function loadMoreProject(){
-    document.getElementById("projectLoadBtn").addEventListener("click", function () {
-    if (isMobile) {
-        loadNextCardMobile()
-    }
-});}
-function projectToggleBtn(){ 
-    document.getElementById("checkbox").addEventListener("change", function () {
-    isFullProjects = !isFullProjects; // Toggle between full and mini projects
-    clearContainer();
-    currentIndex = 0; // Reset the index
-    checkIsMobileOrNot()
-});
-}
-function loadNextCardMobile() {
-    let cardContainer = document.getElementById("card-container");
-    let projects = isFullProjects ? fullProjects : miniProjects;
-    if (currentIndex < projects.length) {
-        addProjectToPage(projects[currentIndex], cardContainer);
-        currentIndex++; // Increment the index
-    } else {
-        // Show final message when all cards are loaded
-        document.getElementById("final-page").style.display = "block";
-    }
 
-
-}
 function loadNextCard() {
     let cardContainer = document.getElementById("card-container");
-    let projects = isFullProjects ? fullProjects : miniProjects;
     projects.forEach((project) => {
         addProjectToPage(project, cardContainer);
     })
 }
-function clearContainer() {
-    let parent = document.getElementById("card-container");
-    while (parent.hasChildNodes()) {
-        parent.removeChild(parent.firstChild);
-        document.getElementById("final-page").style.display = "none";
-    }
-}
 function addProjectToPage(proj, container) {
-    let card = document.createElement('div');
+    let card = document.createElement('swiper-slide');
     card.classList.add('project-card');
     const defaultImage = './images/abouttt.png';
     const imgUrl = proj.ImgSrc ? proj.ImgSrc : defaultImage;
@@ -113,4 +60,4 @@ function skillLoader() {
         skill_container.appendChild(card);
     });
 }
-export {projectSectionLoader, skillLoader}
+export { loadNextCard, skillLoader}

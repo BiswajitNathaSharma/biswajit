@@ -47,8 +47,10 @@ const mySkills = [
     },
 
 ]
-// Array of fullprojects 
-const fullProjects = [
+
+// Array of projects 
+
+const projects = [
     {
         projectName: "Fiziks Chamber",
         description: `Fiziks Chamber is an innovative frontend project designed to promote a local physics coaching center. Highlighting an engaging 'Hall of Frame' page, it captivates users with its attractive design. With seamless device responsiveness and robust contact form validation, users can easily interact with the platform. Notably, messages submitted through the contact form are directly forwarded to the administrators via Elastic Mail, ensuring efficient communication.`,
@@ -56,12 +58,7 @@ const fullProjects = [
         sourceCode: `https://github.com/BiswajitNathaSharma/fiziksChamber`,
         liveDeployment: `https://biswajitnathasharma.github.io/fiziksChamber/`,
         ImgSrc: `./images/project-images/fiziksChamber.png`
-    }
-]
-
-// Array of miniprojects 
-
-const miniProjects = [
+    },
     {
         projectName: "Todo app",
         description: `A streamlined todo list application, enabling users to efficiently manage their daily tasks. Utilizing local storage, the app ensures continuity by preserving tasks even after webpage refresh. Users can seamlessly add, update, and delete todos, enhancing productivity and organization. With its intuitive interface, staying on top of tasks has never been easier. Experience hassle-free task management with our simple yet effective todo list app.`,
@@ -96,4 +93,4 @@ const miniProjects = [
         ImgSrc: `./images/project-images/joakGenerator.png`
     }
 ]
-export { fullProjects, miniProjects, mySkills };
+export { projects, mySkills };
