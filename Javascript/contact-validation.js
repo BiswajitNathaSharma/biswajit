@@ -26,13 +26,13 @@ function validateName() {
     if ((name.length === 0) || (!regex.test(name))) {
         nameError.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i>`
         errorSpace.innerText = "Please enter a valid name";
-        userName.style.border = "2px solid rgb(164, 0, 0)"
+        userName.style.border = "1px solid rgb(164, 0, 0)"
         return false;
     }
     else {
         nameError.innerHTML = `<i class="fa-solid fa-circle-check" style='color:rgb(41, 122, 1)'></i>`
         errorSpace.innerText = "";
-        userName.style.border = "2px solid rgb(27, 115, 1)"
+        userName.style.border = "1px solid rgb(27, 115, 1)"
         return true;
     }
 }
@@ -50,20 +50,20 @@ function validateSubject() {
 
     if (subject.length === 0 || nonWhitespaceChars < required) {
         subjectError.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i>`;
-        userSubject.style.border = "2px solid rgb(164, 0, 0)"
+        userSubject.style.border = "1px solid rgb(164, 0, 0)"
         errorSpace.innerText = `${left} more characters required for a valid subject`;
         return false;
     }
     errorSpace.innerText = "";
     if (nonWhitespaceChars > maxi) {
         errorSpace.innerHTML = `<span style='color:#FF6308'><i class="fa-regular fa-lightbulb" style='color:#FF6308'></i> ProTip! Great subject summaries contain fewer than ${maxi} characters. Your subject contains ${overChar} characters more than required.</span>`;
-        userSubject.style.border = "2px solid #FF6308"
+        userSubject.style.border = "1px solid #FF6308"
         subjectError.innerHTML = `<i class="fa-solid fa-circle-check" style='color:#FF6308'></i>`;
         return true;
     }
     else {
         subjectError.innerHTML = `<i class="fa-solid fa-circle-check" style='color:rgb(27, 115, 1)'></i>`;
-        userSubject.style.border = "2px solid rgb(27, 115, 1)";
+        userSubject.style.border = "1px solid rgb(27, 115, 1)";
         errorSpace.innerText = "";
         return true;
     }
@@ -76,12 +76,12 @@ function validateEmail() {
     if ((email.length === 0) || (!email.match(regex))) {
         emailError.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i>`;
         errorSpace.innerText = `Please enter a valid email address`;
-        userEmail.style.border = "2px solid rgb(164, 0, 0)";
+        userEmail.style.border = "1px solid rgb(164, 0, 0)";
         return false;
     }
     else {
         emailError.innerHTML = `<i class="fa-solid fa-circle-check" style='color:rgb(41, 122, 1)'></i>`;
-        userEmail.style.border = "2px solid rgb(27, 115, 1)";
+        userEmail.style.border = "1px solid rgb(27, 115, 1)";
         errorSpace.innerText = "";
         return true;
     }
@@ -95,13 +95,13 @@ function validateMessage() {
     let left = required - nonWhitespaceChars;
     if (message.length < required || message.length === 0) {
         errorSpace.innerHTML = `${left} more characters required to send the message`;
-        userMessage.style.border = "2px solid rgb(164, 0, 0)"
+        userMessage.style.border = "1px solid rgb(164, 0, 0)"
         messageError.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i>`;
         return false;
     }
     else {
         errorSpace.innerHTML = "<span style='color:rgb(41, 122, 1)'>Now message can be send</span>";
-        userMessage.style.border = "2px solid rgb(27, 115, 1)"
+        userMessage.style.border = "1px solid rgb(27, 115, 1)"
         messageError.innerHTML = `<i class="fa-solid fa-circle-check" style='color:rgb(41, 122, 1)'></i>`;
 
         return true;
@@ -126,7 +126,7 @@ function sendmail() {
 
 function openPopup(message) {
     if (message.includes("OK")) {
-        popup_p.innerText = "Message has successfully send to admin."
+        popup_p.innerText = "Ding! Ding! Your message just landed in the admin's inbox. They'll see it soon!"
     }
     else {
         popup_h.innerText = `Sorry!`
@@ -149,6 +149,10 @@ function closePopup() {
     subjectError.innerText = ``;
     messageError.innerText = ``;
     overlay.style.display = "none";
+    userName.style.border = "1px solid"
+    userSubject.style.border = "1px solid"
+    userEmail.style.border = "1px solid"
+    userMessage.style.border = "1px solid"
 }
 function validateAndSubmit(e) {
     e.preventDefault();
