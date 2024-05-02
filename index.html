@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- adding personilazation stuffs  -->
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/122850529?v=4" type="image/icon type">
+    <link rel="icon" href="./images/component-images/myImage.png" type="image/icon type">
     <title>Biswajit</title>
     <!-- importing stuff from internet  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,14 +15,11 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- internet importion end  -->
-        <!-- css imported portion  -->
+    <!-- css imported portion  -->
     <link rel="stylesheet" href="./CSS/loader.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <!-- css import end  -->
-    <!-- js import start  -->
-    <script src="https://kit.fontawesome.com/2e79f70891.js" crossorigin="anonymous"></script>
-    <script src="./Javascript/index.js" type="module"></script>
-    <!-- js import end  -->
+
 </head>
 
 <body>
@@ -35,7 +32,8 @@
     <!-- loader will show until the page loads completely -->
     <div class="loader-container">
         <div class="preloader">
-            <svg class="cart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+            <svg class="cart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px"
+                height="128px" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
                     <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
                         <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
@@ -43,12 +41,15 @@
                         <circle cx="102" cy="111" r="13" />
                     </g>
                     <g class="cart__lines" stroke="currentColor">
-                        <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" stroke-dasharray="338 338" stroke-dashoffset="-338" />
+                        <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80"
+                            stroke-dasharray="338 338" stroke-dashoffset="-338" />
                         <g class="cart__wheel1" transform="rotate(-90,43,111)">
-                            <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                            <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68"
+                                stroke-dashoffset="81.68" />
                         </g>
                         <g class="cart__wheel2" transform="rotate(90,102,111)">
-                            <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+                            <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68"
+                                stroke-dashoffset="81.68" />
                         </g>
                     </g>
                 </g>
@@ -63,54 +64,54 @@
     <!-- navigation menu for small devices  -->
     <div class="nav-container">
         <nav class="nav">
-        <input id="menu" type="checkbox">
-        <label for="menu">Menu</label>
-        <ul class="menu">
-            <li>
-            <a href="#">
-                <span>Home</span>
-                <img src="./images/navigation-images/home.png" alt="home icon">
-            </a>
-            </li>
-            <li>
-            <a href="#Skills">
-                <span>Skills</span>
-                <img src="./images/navigation-images/skill.png" alt="skills icon">
-            </a>
-            </li>
-            <li>
-            <a href="#About">
-                <span>About</span>
-                <img src="./images/navigation-images/about.png" alt="about icon">
-            </a>
-            </li>
-            <li>
-            <a href="#Contact">
-                <span>Contact</span>
-                <img src="./images/navigation-images/contact.png" alt="contact icon">
-            </a>
-            </li>
-            <li>
-            <a href="#Projects">
-                <span>Projects</span>
-                <img src="./images/navigation-images/project.png" alt="project icon">
-            </a>
-            </li>
-        </ul>
+            <input id="menu" type="checkbox">
+            <label for="menu">Menu</label>
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        <span>Home</span>
+                        <img src="./images/navigation-images/home.png" alt="home icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#Skills">
+                        <span>Skills</span>
+                        <img src="./images/navigation-images/skill.png" alt="skills icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#About">
+                        <span>About</span>
+                        <img src="./images/navigation-images/about.png" alt="about icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#Contact">
+                        <span>Contact</span>
+                        <img src="./images/navigation-images/contact.png" alt="contact icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#Projects">
+                        <span>Projects</span>
+                        <img src="./images/navigation-images/project.png" alt="project icon">
+                    </a>
+                </li>
+            </ul>
         </nav>
     </div>
-        
+
     <!-- header started here  -->
 
     <header>
         <span class="logo">&lt;Biswajit/&gt;</span>
         <nav>
             <ul>
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#Skills">Skills</a></li>
-                <li> <a href="#Projects">Projects</a></li>
-                <li> <a href="#About">About</a></li>
-                <li> <a href="#Contact">Contact</a></li>
+                <li class="navigation"> <a href="#">Home</a></li>
+                <li class="navigation"> <a href="#Skills">Skills</a></li>
+                <li class="navigation"> <a href="#Projects">Projects</a></li>
+                <li class="navigation"> <a href="#About">About</a></li>
+                <li class="navigation"> <a href="#Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -130,9 +131,9 @@
                         </button>
                         </a>
                     <a href="#Contact"><button class="main-btn">Hire Me
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </button></a>
-                    
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button></a>
+
                     <img src="./images/component-images/arrow.jpg" alt="arrow icon" />
 
                 </div>
@@ -144,7 +145,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/biswajit-natha-sharma-7855b4239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                            <a
+                                href="https://www.linkedin.com/in/biswajit-natha-sharma-7855b4239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                                 <i class="fa-brands fa-linkedin-in icon"></i>
                             </a>
                         </li>
@@ -171,36 +173,45 @@
     <!-- skill section started  -->
     <div class="background"></div>
     <div class="divider" id="Skills"></div>
-    <section >
+    <section>
         <div class="skills-section">
-        <div class="skill-heading">
-            <h2>Skills</h2>
-            <img src="./images/component-images/skills.99d11128.svg" alt="skill girl" class="skills-girl">
+            <div class="skill-heading">
+                <h2>Skills</h2>
+                <img src="./images/component-images/skills.99d11128.svg" alt="skill girl" class="skills-girl">
+            </div>
+            <div class="main-skill">
+                <p>Technologies I'm familiar with:</p>
+                <div class="skill-container" id="skill-container"></div>
+            </div>
+            <img src="./images/component-images/servies.png" alt="skill girl" class="skills-girl2">
         </div>
-    <div class="main-skill">
-        <p>Technologies I'm familiar with:</p>
-        <div class="skill-container" id="skill-container"></div>
-    </div>
-        <img src="./images/component-images/servies.png" alt="skill girl" class="skills-girl2">
-    </div>
     </section>
 
     <!-- Projects Section -->
     <div class="background"></div>
     <div class="divider" id="Projects"></div>
     <section class="projects-section">
+        <h1 class="project-heading">Peojects</h1>
         <div class="project-container">
-            <div class="project-heading">
-                <h1>Projects</h1>
-                <div class="tougle">
-                    <input
-                    type="checkbox" id="checkbox">
-                    <label for="checkbox" id="btn" ></label>
-                </div>
-            </div>
-            <div id="card-container"></div>
-            <button class="project-btn" id="projectLoadBtn">More Projects <i class="fa-solid fa-square-caret-down"></i></button>
-            <span id="final-page" class="final-page">It seems you uncovered the final card...</span>
+            
+                    <swiper-container
+                    class="mySwiper"
+                    effect="coverflow" 
+                    grab-cursor="true"
+                    centered-slides="true" 
+                    slides-per-view="auto" 
+                    coverflow-effect-rotate="50"
+                    coverflow-effect-stretch="0" 
+                    coverflow-effect-depth="200" 
+                    coverflow-effect-modifier="1"
+                    coverflow-effect-slide-shadows="true" 
+                    navigation="true"
+                    autoplay-delay="2500"
+                    autoplay-disable-on-interaction="true"
+                    id="card-container"
+                    autoplay="true"
+                    >
+                    </swiper-container>
         </div>
     </section>
 
@@ -221,9 +232,17 @@
                     web applications using modern technologies. Explore my portfolio to witness my passion for frontend
                     development and dedication to delivering high-quality, responsive web experiences.</p>
                 <br>
+<<<<<<< HEAD
                 <a href="https://maps.app.goo.gl/udw2xZ1rF5jkFYnz9"><span><i class="fa-solid fa-location-dot"></i>Odisha, India</span></a>
                 <a href="mailto:sharmaoncourse@gmail.com"> <span><i class="fa-solid fa-envelope-circle-check"></i>sharmaoncourse@gmail.com</span></a>
                 <a href="Tel:"><span><i class="fa-solid fa-phone-volume"></i>&nbsp; N/A</span></a>
+=======
+                <a href="https://maps.app.goo.gl/udw2xZ1rF5jkFYnz9"><span><i
+                            class="fa-solid fa-location-dot"></i>Odisha, India</span></a>
+                <a href="mailto:sharmaoncourse@gmail.com"> <span><i
+                            class="fa-solid fa-envelope-circle-check"></i>sharmaoncourse@gmail.com</span></a>
+                <a href="Tel:"><span><i class="fa-solid fa-phone-volume"></i>+91 9999999999</span></a>
+>>>>>>> 6c50160384375e525c1e2d32b1b43324405bb242
             </div>
         </div>
     </section>
@@ -241,14 +260,34 @@
                 <img src="./images/component-images/contactImgs.2ecc8e0e.svg" alt="">
             </div>
             <div class="right-contact">
-                <form action="">
-                    <label for="name">Name:</label>
-                    <input type="text" 
-                    id="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email">
-                    <label for="message">Message:</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <form action="" id="form">
+                    <div class="input">
+                        <label for="name">Name:</label>
+                        <div class="error name-error">
+                        </div>
+                        <input type="text" id="name" required onkeyup="validateName()">
+                    </div>
+
+                    <div class="input">
+                        <label for="subject">Message Subject:</label>
+                        <div class="error subject-error">
+                        </div>
+                        <input type="text" id="subject" onkeyup="validateSubject()">
+                    </div>
+                    <div class="input">
+                        <label for="email">Email:</label>
+                        <div class="error email-error">
+                        </div>
+                        <input type="email" id="email" onkeyup="validateEmail()">
+                    </div>
+
+                    <div class="input message">
+                        <label for="message">Message:</label>
+                        <div class="error message-error">
+                        </div>
+                        <textarea name="message" id="message" onkeyup="validateMessage()"></textarea>
+                    </div>
+
                     <button type="submit">Submit</button>
                     <span id="error-message"></span>
                 </form>
@@ -257,6 +296,34 @@
     </section>
     <!-- end of contact section  -->
 
+    <!-- Created a popup aection to display a  thank you popup  -->
+    <popup id="popup" class="popup">
+        <div>
+            <img src="./images/component-images/free-pink.png" alt="">
+            <h2 id="popup-h2">Thank You!</h2>
+            <p id="popup-p">message send successfully</p>
+            <button type="submit" onclick="closePopup()">OK</button>
+        </div>
+    </popup>
 
+    <!-- js import start  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <!-- Swiper JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/2e79f70891.js" crossorigin="anonymous"></script>
+    <script src="./Javascript/index.js" type="module"></script>
+    <script src="./Javascript/contact-validation.js"></script>
+
+    <!-- js import end  -->
 </body>
+
 </html>
